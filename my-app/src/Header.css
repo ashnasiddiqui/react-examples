@@ -1,10 +1,13 @@
 .navbar-custom{
     background-color: white;
-    box-shadow:1px 1px #CCCCCC;
+    box-shadow:3px 3px #a1a1a1;
 
 }
+.contain{
+    display: flex;
+}
 .nav{
-    color: #CACACA !important;
+    color: #000000 !important;
     font-weight:600 !important;
 
 }
@@ -14,7 +17,4 @@
 .brand{
     display: inline !important;
     padding-left:10px !important;
-}
-.toggle{
-    padding:0 !important;
 }
