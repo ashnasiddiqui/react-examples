@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import "./Header.css"
+import { NavLink,Link } from "react-router-dom";
 function Header() {
   return (
     <Navbar expand="lg" className="navbar-custom">
@@ -9,16 +10,18 @@ function Header() {
         <Container className="contain">
           <Navbar.Toggle/>
           <Navbar.Brand className="nav brand">
+          <Link to="/">
             <img src="logoimage.png" height="30" alt="logo" />
+            </Link>
           </Navbar.Brand>
         </Container>
         <Navbar.Collapse>
-          <Nav.Link href="#" className="nav">
+          <NavLink to="/dashboard" className="link">
             Dashboard
-          </Nav.Link>
-          <Nav.Link href="#" className="nav">
+            </NavLink>
+          <NavLink to="/about" className="link">
             About
-          </Nav.Link>
+            </NavLink>
         </Navbar.Collapse>
       </Nav>
     </Navbar>
