@@ -6,15 +6,19 @@
 .contain{
     display: flex;
 }
-.nav{
-    color: #000000 !important;
-    font-weight:600 !important;
-
-}
-.nav:hover{
-    color:#7F2473 !important;
-}
 .brand{
-    display: inline !important;
     padding-left:10px !important;
+}
+.link{
+    text-decoration: none;
+    color: #000000;
+    font-weight:600;
+    padding:8px;
+    display: block;
+}
+.link:hover{
+    color:#7F2473;
+}
+.active{
+ color:#ad3e9f;
 }
